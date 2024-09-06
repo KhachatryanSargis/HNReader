@@ -11,6 +11,12 @@
 		0F53943A2C8B21900017899F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394392C8B21900017899F /* ContentView.swift */; };
 		0F53943C2C8B21910017899F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F53943B2C8B21910017899F /* Assets.xcassets */; };
 		0F53943F2C8B21910017899F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F53943E2C8B21910017899F /* Preview Assets.xcassets */; };
+		0F53944C2C8B2E470017899F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F53944B2C8B2E470017899F /* AppDelegate.swift */; };
+		0F53944E2C8B2E470017899F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F53944D2C8B2E470017899F /* SceneDelegate.swift */; };
+		0F5394502C8B2E470017899F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F53944F2C8B2E470017899F /* ViewController.swift */; };
+		0F5394532C8B2E470017899F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0F5394522C8B2E470017899F /* Base */; };
+		0F5394552C8B2E480017899F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5394542C8B2E480017899F /* Assets.xcassets */; };
+		0F5394582C8B2E480017899F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0F5394572C8B2E480017899F /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,10 +25,25 @@
 		0F5394392C8B21900017899F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0F53943B2C8B21910017899F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F53943E2C8B21910017899F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0F5394492C8B2E470017899F /* HNReaderUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNReaderUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F53944B2C8B2E470017899F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0F53944D2C8B2E470017899F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0F53944F2C8B2E470017899F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F5394522C8B2E470017899F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0F5394542C8B2E480017899F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F5394572C8B2E480017899F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0F5394592C8B2E480017899F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0F5394312C8B21900017899F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F5394462C8B2E470017899F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				0F5394362C8B21900017899F /* HNReader */,
+				0F53944A2C8B2E470017899F /* HNReaderUIKit */,
 				0F5394352C8B21900017899F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				0F5394342C8B21900017899F /* HNReader.app */,
+				0F5394492C8B2E470017899F /* HNReaderUIKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +90,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0F53944A2C8B2E470017899F /* HNReaderUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0F53944B2C8B2E470017899F /* AppDelegate.swift */,
+				0F53944D2C8B2E470017899F /* SceneDelegate.swift */,
+				0F53944F2C8B2E470017899F /* ViewController.swift */,
+				0F5394512C8B2E470017899F /* Main.storyboard */,
+				0F5394542C8B2E480017899F /* Assets.xcassets */,
+				0F5394562C8B2E480017899F /* LaunchScreen.storyboard */,
+				0F5394592C8B2E480017899F /* Info.plist */,
+			);
+			path = HNReaderUIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +124,23 @@
 			productReference = 0F5394342C8B21900017899F /* HNReader.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0F5394482C8B2E470017899F /* HNReaderUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F53945C2C8B2E480017899F /* Build configuration list for PBXNativeTarget "HNReaderUIKit" */;
+			buildPhases = (
+				0F5394452C8B2E470017899F /* Sources */,
+				0F5394462C8B2E470017899F /* Frameworks */,
+				0F5394472C8B2E470017899F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HNReaderUIKit;
+			productName = HNReaderUIKit;
+			productReference = 0F5394492C8B2E470017899F /* HNReaderUIKit.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +152,9 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					0F5394332C8B21900017899F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					0F5394482C8B2E470017899F = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -116,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				0F5394332C8B21900017899F /* HNReader */,
+				0F5394482C8B2E470017899F /* HNReaderUIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +185,16 @@
 			files = (
 				0F53943F2C8B21910017899F /* Preview Assets.xcassets in Resources */,
 				0F53943C2C8B21910017899F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F5394472C8B2E470017899F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F5394552C8B2E480017899F /* Assets.xcassets in Resources */,
+				0F5394582C8B2E480017899F /* Base in Resources */,
+				0F5394532C8B2E470017899F /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +210,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0F5394452C8B2E470017899F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F5394502C8B2E470017899F /* ViewController.swift in Sources */,
+				0F53944C2C8B2E470017899F /* AppDelegate.swift in Sources */,
+				0F53944E2C8B2E470017899F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F5394512C8B2E470017899F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F5394522C8B2E470017899F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0F5394562C8B2E480017899F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F5394572C8B2E480017899F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0F5394402C8B21910017899F /* Debug */ = {
@@ -322,6 +419,62 @@
 			};
 			name = Release;
 		};
+		0F53945A2C8B2E480017899F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4L9HZ5K5Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HNReaderUIKit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skh.HNReaderUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0F53945B2C8B2E480017899F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4L9HZ5K5Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HNReaderUIKit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skh.HNReaderUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +492,15 @@
 			buildConfigurations = (
 				0F5394432C8B21910017899F /* Debug */,
 				0F5394442C8B21910017899F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F53945C2C8B2E480017899F /* Build configuration list for PBXNativeTarget "HNReaderUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F53945A2C8B2E480017899F /* Debug */,
+				0F53945B2C8B2E480017899F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
