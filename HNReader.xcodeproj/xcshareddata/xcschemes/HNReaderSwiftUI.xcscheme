@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0F5394332C8B21900017899F"
-               BuildableName = "HNReader.app"
-               BlueprintName = "HNReader"
+               BuildableName = "HNReaderSwiftUI.app"
+               BlueprintName = "HNReaderSwiftUI"
                ReferencedContainer = "container:HNReader.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F5394332C8B21900017899F"
-            BuildableName = "HNReader.app"
-            BlueprintName = "HNReader"
+            BuildableName = "HNReaderSwiftUI.app"
+            BlueprintName = "HNReaderSwiftUI"
             ReferencedContainer = "container:HNReader.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0F5394332C8B21900017899F"
-            BuildableName = "HNReader.app"
-            BlueprintName = "HNReader"
+            BuildableName = "HNReaderSwiftUI.app"
+            BlueprintName = "HNReaderSwiftUI"
             ReferencedContainer = "container:HNReader.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F5394342C8B21900017899F /* HNReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F5394342C8B21900017899F /* HNReaderSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNReaderSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5394372C8B21900017899F /* HNReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNReaderApp.swift; sourceTree = "<group>"; };
 		0F5394392C8B21900017899F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0F53943B2C8B21910017899F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		0F53942B2C8B21900017899F = {
 			isa = PBXGroup;
 			children = (
-				0F5394362C8B21900017899F /* HNReader */,
+				0F5394362C8B21900017899F /* HNReaderSwiftUI */,
 				0F53944A2C8B2E470017899F /* HNReaderUIKit */,
 				0F5394352C8B21900017899F /* Products */,
 			);
@@ -65,13 +65,13 @@
 		0F5394352C8B21900017899F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F5394342C8B21900017899F /* HNReader.app */,
+				0F5394342C8B21900017899F /* HNReaderSwiftUI.app */,
 				0F5394492C8B2E470017899F /* HNReaderUIKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0F5394362C8B21900017899F /* HNReader */ = {
+		0F5394362C8B21900017899F /* HNReaderSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
 				0F5394372C8B21900017899F /* HNReaderApp.swift */,
@@ -79,7 +79,7 @@
 				0F53943B2C8B21910017899F /* Assets.xcassets */,
 				0F53943D2C8B21910017899F /* Preview Content */,
 			);
-			path = HNReader;
+			path = HNReaderSwiftUI;
 			sourceTree = "<group>";
 		};
 		0F53943D2C8B21910017899F /* Preview Content */ = {
@@ -107,9 +107,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0F5394332C8B21900017899F /* HNReader */ = {
+		0F5394332C8B21900017899F /* HNReaderSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0F5394422C8B21910017899F /* Build configuration list for PBXNativeTarget "HNReader" */;
+			buildConfigurationList = 0F5394422C8B21910017899F /* Build configuration list for PBXNativeTarget "HNReaderSwiftUI" */;
 			buildPhases = (
 				0F5394302C8B21900017899F /* Sources */,
 				0F5394312C8B21900017899F /* Frameworks */,
@@ -119,9 +119,9 @@
 			);
 			dependencies = (
 			);
-			name = HNReader;
+			name = HNReaderSwiftUI;
 			productName = HNReader;
-			productReference = 0F5394342C8B21900017899F /* HNReader.app */;
+			productReference = 0F5394342C8B21900017899F /* HNReaderSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0F5394482C8B2E470017899F /* HNReaderUIKit */ = {
@@ -172,7 +172,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0F5394332C8B21900017899F /* HNReader */,
+				0F5394332C8B21900017899F /* HNReaderSwiftUI */,
 				0F5394482C8B2E470017899F /* HNReaderUIKit */,
 			);
 		};
@@ -368,7 +368,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HNReader/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HNReaderSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 4L9HZ5K5Q3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -397,7 +397,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HNReader/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HNReaderSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 4L9HZ5K5Q3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -487,7 +487,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0F5394422C8B21910017899F /* Build configuration list for PBXNativeTarget "HNReader" */ = {
+		0F5394422C8B21910017899F /* Build configuration list for PBXNativeTarget "HNReaderSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0F5394432C8B21910017899F /* Debug */,
