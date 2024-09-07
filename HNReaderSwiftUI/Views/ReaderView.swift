@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ReaderView: View {
     var model: ReaderViewModel
-    var presentingSettingsSheet = false
+    @State var presentingSettingsSheet = false
     
     var currentDate = Date()
     
@@ -46,23 +46,18 @@ struct ReaderView: View {
                 }.padding()
             }
             .listStyle(PlainListStyle())
-            // Present the Settings sheet here
+            .sheet(isPresented: $presentingSettingsSheet, content: {
+                SettingsView()
+            })
             // Display errors here
             .navigationBarTitle(Text("\(self.model.stories.count) Stories"))
-            .navigationBarItems(trailing:
-                                    Button("Settings") {
-                // Set presentingSettingsSheet to true here
-                
-            }
-            )
+            .navigationBarItems(trailing: Button("Settings") {
+                presentingSettingsSheet = true
+            })
         }
     }
 }
 
-#if DEBUG
-struct ReaderView_Previews: PreviewProvider {
-    static var previews: some View {
-        ReaderView(model: ReaderViewModel())
-    }
+#Preview {
+    ReaderView(model: ReaderViewModel())
 }
-#endif
