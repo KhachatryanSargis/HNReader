@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct HNReaderApp: App {
+    let viewModel = ReaderViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ReaderView(model: viewModel)
         }
     }
 }

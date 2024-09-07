@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Story: Codable {
+public struct Story: Codable, Identifiable {
     public let id: Int
     public let title: String
     public let by: String

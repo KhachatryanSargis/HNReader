@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0F5394382C8B21900017899F /* HNReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394372C8B21900017899F /* HNReaderApp.swift */; };
-		0F53943A2C8B21900017899F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394392C8B21900017899F /* ContentView.swift */; };
 		0F53943C2C8B21910017899F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F53943B2C8B21910017899F /* Assets.xcassets */; };
 		0F53943F2C8B21910017899F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F53943E2C8B21910017899F /* Preview Assets.xcassets */; };
 		0F53944C2C8B2E470017899F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F53944B2C8B2E470017899F /* AppDelegate.swift */; };
@@ -23,6 +22,16 @@
 		0F53949F2C8B44610017899F /* HNReaderAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5394902C8B43EC0017899F /* HNReaderAPI.framework */; };
 		0F5394A02C8B44610017899F /* HNReaderAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5394902C8B43EC0017899F /* HNReaderAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0F5394A52C8B47760017899F /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394A42C8B47760017899F /* Story.swift */; };
+		0F5394AC2C8C94A00017899F /* FilterKeyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394AB2C8C94A00017899F /* FilterKeyword.swift */; };
+		0F5394AE2C8C94CD0017899F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394AD2C8C94CD0017899F /* Settings.swift */; };
+		0F5394B02C8C94EF0017899F /* ReaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394AF2C8C94EF0017899F /* ReaderViewModel.swift */; };
+		0F5394B32C8C957B0017899F /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394B22C8C957B0017899F /* ReaderView.swift */; };
+		0F5394B52C8C95AC0017899F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394B42C8C95AC0017899F /* SettingsView.swift */; };
+		0F5394B72C8C95D00017899F /* AddKeywordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394B62C8C95D00017899F /* AddKeywordView.swift */; };
+		0F5394BA2C8C95F90017899F /* LargeInlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394B92C8C95F90017899F /* LargeInlineButton.swift */; };
+		0F5394BC2C8C96130017899F /* TimeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394BB2C8C96130017899F /* TimeBadge.swift */; };
+		0F5394BE2C8C963A0017899F /* PostedBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394BD2C8C963A0017899F /* PostedBy.swift */; };
+		0F5394C12C8C96DB0017899F /* JSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394C02C8C96DB0017899F /* JSONFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +79,6 @@
 /* Begin PBXFileReference section */
 		0F5394342C8B21900017899F /* HNReaderSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNReaderSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F5394372C8B21900017899F /* HNReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNReaderApp.swift; sourceTree = "<group>"; };
-		0F5394392C8B21900017899F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0F53943B2C8B21910017899F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F53943E2C8B21910017899F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0F5394492C8B2E470017899F /* HNReaderUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNReaderUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +92,16 @@
 		0F5394922C8B43EC0017899F /* HNReaderAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNReaderAPI.h; sourceTree = "<group>"; };
 		0F5394972C8B43F70017899F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		0F5394A42C8B47760017899F /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		0F5394AB2C8C94A00017899F /* FilterKeyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterKeyword.swift; sourceTree = "<group>"; };
+		0F5394AD2C8C94CD0017899F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		0F5394AF2C8C94EF0017899F /* ReaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewModel.swift; sourceTree = "<group>"; };
+		0F5394B22C8C957B0017899F /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
+		0F5394B42C8C95AC0017899F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0F5394B62C8C95D00017899F /* AddKeywordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKeywordView.swift; sourceTree = "<group>"; };
+		0F5394B92C8C95F90017899F /* LargeInlineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeInlineButton.swift; sourceTree = "<group>"; };
+		0F5394BB2C8C96130017899F /* TimeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBadge.swift; sourceTree = "<group>"; };
+		0F5394BD2C8C963A0017899F /* PostedBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostedBy.swift; sourceTree = "<group>"; };
+		0F5394C02C8C96DB0017899F /* JSONFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,9 +155,11 @@
 		0F5394362C8B21900017899F /* HNReaderSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				0F5394372C8B21900017899F /* HNReaderApp.swift */,
-				0F5394392C8B21900017899F /* ContentView.swift */,
-				0F53943B2C8B21910017899F /* Assets.xcassets */,
+				0F5394A92C8C94320017899F /* Assets */,
+				0F5394A82C8C94270017899F /* App */,
+				0F5394AA2C8C947F0017899F /* Model */,
+				0F5394B12C8C95320017899F /* Views */,
+				0F5394BF2C8C96C80017899F /* Util */,
 				0F53943D2C8B21910017899F /* Preview Content */,
 			);
 			path = HNReaderSwiftUI;
@@ -181,6 +201,61 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F5394A82C8C94270017899F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0F5394372C8B21900017899F /* HNReaderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0F5394A92C8C94320017899F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0F53943B2C8B21910017899F /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0F5394AA2C8C947F0017899F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F5394AB2C8C94A00017899F /* FilterKeyword.swift */,
+				0F5394AD2C8C94CD0017899F /* Settings.swift */,
+				0F5394AF2C8C94EF0017899F /* ReaderViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F5394B12C8C95320017899F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F5394B82C8C95E60017899F /* Helpers */,
+				0F5394B22C8C957B0017899F /* ReaderView.swift */,
+				0F5394B42C8C95AC0017899F /* SettingsView.swift */,
+				0F5394B62C8C95D00017899F /* AddKeywordView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0F5394B82C8C95E60017899F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0F5394B92C8C95F90017899F /* LargeInlineButton.swift */,
+				0F5394BB2C8C96130017899F /* TimeBadge.swift */,
+				0F5394BD2C8C963A0017899F /* PostedBy.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0F5394BF2C8C96C80017899F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0F5394C02C8C96DB0017899F /* JSONFile.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +403,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F53943A2C8B21900017899F /* ContentView.swift in Sources */,
+				0F5394BA2C8C95F90017899F /* LargeInlineButton.swift in Sources */,
+				0F5394B72C8C95D00017899F /* AddKeywordView.swift in Sources */,
+				0F5394B52C8C95AC0017899F /* SettingsView.swift in Sources */,
+				0F5394AC2C8C94A00017899F /* FilterKeyword.swift in Sources */,
+				0F5394BE2C8C963A0017899F /* PostedBy.swift in Sources */,
+				0F5394B32C8C957B0017899F /* ReaderView.swift in Sources */,
+				0F5394B02C8C94EF0017899F /* ReaderViewModel.swift in Sources */,
+				0F5394C12C8C96DB0017899F /* JSONFile.swift in Sources */,
+				0F5394AE2C8C94CD0017899F /* Settings.swift in Sources */,
+				0F5394BC2C8C96130017899F /* TimeBadge.swift in Sources */,
 				0F5394382C8B21900017899F /* HNReaderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
