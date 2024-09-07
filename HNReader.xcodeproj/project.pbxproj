@@ -32,6 +32,7 @@
 		0F5394BC2C8C96130017899F /* TimeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394BB2C8C96130017899F /* TimeBadge.swift */; };
 		0F5394BE2C8C963A0017899F /* PostedBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394BD2C8C963A0017899F /* PostedBy.swift */; };
 		0F5394C12C8C96DB0017899F /* JSONFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394C02C8C96DB0017899F /* JSONFile.swift */; };
+		0F5394C62C8CC5260017899F /* StoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5394C52C8CC5260017899F /* StoriesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		0F5394BB2C8C96130017899F /* TimeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBadge.swift; sourceTree = "<group>"; };
 		0F5394BD2C8C963A0017899F /* PostedBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostedBy.swift; sourceTree = "<group>"; };
 		0F5394C02C8C96DB0017899F /* JSONFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFile.swift; sourceTree = "<group>"; };
+		0F5394C52C8CC5260017899F /* StoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,9 +178,9 @@
 		0F53944A2C8B2E470017899F /* HNReaderUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				0F53944B2C8B2E470017899F /* AppDelegate.swift */,
-				0F53944D2C8B2E470017899F /* SceneDelegate.swift */,
-				0F53944F2C8B2E470017899F /* StoriesTableViewController.swift */,
+				0F5394C22C8CC4D60017899F /* App */,
+				0F5394C42C8CC4FB0017899F /* Model */,
+				0F5394C32C8CC4E80017899F /* Controllers */,
 				0F5394542C8B2E480017899F /* Assets.xcassets */,
 				0F5394562C8B2E480017899F /* LaunchScreen.storyboard */,
 				0F5394592C8B2E480017899F /* Info.plist */,
@@ -256,6 +258,31 @@
 				0F5394C02C8C96DB0017899F /* JSONFile.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		0F5394C22C8CC4D60017899F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0F53944B2C8B2E470017899F /* AppDelegate.swift */,
+				0F53944D2C8B2E470017899F /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0F5394C32C8CC4E80017899F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F53944F2C8B2E470017899F /* StoriesTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0F5394C42C8CC4FB0017899F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F5394C52C8CC5260017899F /* StoriesViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +450,7 @@
 			files = (
 				0F5394502C8B2E470017899F /* StoriesTableViewController.swift in Sources */,
 				0F53944C2C8B2E470017899F /* AppDelegate.swift in Sources */,
+				0F5394C62C8CC5260017899F /* StoriesViewModel.swift in Sources */,
 				0F53944E2C8B2E470017899F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
