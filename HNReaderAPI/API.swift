@@ -10,7 +10,9 @@ import Combine
 
 public struct API {
     /// API Errors.
-    public enum Error: LocalizedError {
+    public enum Error: LocalizedError, Identifiable {
+        public var id: String { localizedDescription }
+        
         case addressUnreachable(URL)
         case invalidResponse
         
