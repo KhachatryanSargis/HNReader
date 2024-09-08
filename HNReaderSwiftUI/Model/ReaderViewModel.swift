@@ -7,12 +7,15 @@
 
 import Foundation
 import HNReaderAPI
+import Combine
 
-class ReaderViewModel {
-    private let api = API()
-    private var allStories = [Story]()
+class ReaderViewModel: ObservableObject {
+    @Published var allStories = [Story]()
+    @Published var error: API.Error? = nil
+    @Published var filter = [String]()
     
-    var filter = [String]()
+    private var sunscriptions = Set<AnyCancellable>()
+    private let api = API()
     
     var stories: [Story] {
         guard !filter.isEmpty else {
@@ -26,5 +29,18 @@ class ReaderViewModel {
             }
     }
     
-    var error: API.Error? = nil
+    func fetchStories() {
+        api
+            .stories()
+            .receive(on: DispatchQueue.main)
+            .sink { completion in
+                if case .failure(let error) = completion {
+                    self.error = error
+                }
+            } receiveValue: { stories in
+                self.allStories = stories
+                self.error = nil
+            }
+            .store(in: &sunscriptions)
+    }
 }

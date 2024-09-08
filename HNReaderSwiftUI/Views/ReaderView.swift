@@ -6,19 +6,35 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ReaderView: View {
-    var model: ReaderViewModel
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    @EnvironmentObject var settings: Settings
+    @ObservedObject var model: ReaderViewModel
     @State var presentingSettingsSheet = false
+    @State var currentDate = Date()
     
-    var currentDate = Date()
+    private let timer = Timer
+        .publish(
+            every: 10,
+            on: .main,
+            in: .common
+        )
+        .autoconnect()
+        .eraseToAnyPublisher()
     
     init(model: ReaderViewModel) {
         self.model = model
     }
     
     var body: some View {
-        let filter = "Showing all stories"
+        let keywords = settings.keywords
+            .map { $0.value }
+            .joined(separator: ", ")
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        let filter = keywords.isEmpty ? "Showing all stories" : "Filter: \(keywords)"
         
         return NavigationView {
             List {
@@ -37,19 +53,28 @@ struct ReaderView: View {
                                 print(story)
                             }
                             .font(.subheadline)
-                            .foregroundColor(Color.blue)
+                            .foregroundColor(colorScheme == .light ? .blue : .orange)
                             .padding(.top, 6)
                         }
                         .padding()
                     }
-                    // Add timer here
+                    .onReceive(timer) {
+                        currentDate = $0
+                    }
                 }.padding()
             }
             .listStyle(PlainListStyle())
             .sheet(isPresented: $presentingSettingsSheet, content: {
                 SettingsView()
+                    .environmentObject(self.settings)
             })
-            // Display errors here
+            .alert(item: self.$model.error) { error in
+                Alert(
+                    title: Text("Network error"),
+                    message: Text(error.localizedDescription),
+                    dismissButton: .cancel()
+                )
+            }
             .navigationBarTitle(Text("\(self.model.stories.count) Stories"))
             .navigationBarItems(trailing: Button("Settings") {
                 presentingSettingsSheet = true
